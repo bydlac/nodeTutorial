@@ -10,7 +10,7 @@ forecast = (longi, lati, callback) => {
             callback("error you have have made some kind of typo");
         }
         else {
-            callback(undefined, r.body.daily.data[0].summary + "also there is " + r.body.currently.temperature);
+            callback(undefined, r.body.daily.data[0].summary + "also there is " + r.body.currently.temperature  + " °F");
         }
     })
 }
